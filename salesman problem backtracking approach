@@ -1,3 +1,9 @@
+
+
+from typing import List
+import time
+import matplotlib.pyplot as plt
+
 # prints subset found
 def print_subset(A:List[int], size:int)->None:
     for i in range(size):
@@ -57,6 +63,7 @@ def timer (weights,size,target):
 weights = [15, 22, 14, 26, 32, 9, 16, 8,78,90,8,12]
 target = 53
 size = len(weights)
+total_nodes=size
 generateSubsets(weights, size, target)
 print("Nodes generated ",total_nodes)
 timer(weights,size,target)
